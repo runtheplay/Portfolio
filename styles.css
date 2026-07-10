@@ -74,3 +74,12 @@ body {
 .education {
   border-top: 5px solid #00a1de;
 }
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #2c3e50;
+  color: #fff;
+  margin-top: 30px;
+  border-top: 3px solid #3498db;
+}
