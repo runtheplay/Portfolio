@@ -1,85 +1,68 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #eaf6ff;
-  color: #1e293b;
-}
+/* Smooth Theme Transition */
 
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px;
-}
-
-.hero {
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.hero h1 {
-  color: #00a1de;
-  font-size: 3rem;
-}
-
-.hero p {
-  color: #f7c600;
-  font-size: 1.2rem;
-}
-
-.buttons {
-  margin-top: 20px;
-}
-
-.btn-primary,
-.btn-secondary {
-  text-decoration: none;
-  padding: 12px 20px;
-  border-radius: 10px;
-  margin: 0 5px;
-  display: inline-block;
-}
-
-.btn-primary {
-  background: #00a1de;
-  color: white;
-}
-
-.btn-secondary {
-  border: 2px solid #00a651;
-  color: #00a651;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  margin-bottom: 20px;
-}
-
-.about {
-  border-left: 5px solid #f7c600;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.skills {
-  border-top: 5px solid #00a651;
-}
-
-.education {
-  border-top: 5px solid #00a1de;
-}
-
+body,
+.container,
+.card,
+input,
+button,
+a,
 footer {
-  text-align: center;
-  padding: 15px;
-  background: #2c3e50;
-  color: #fff;
-  margin-top: 30px;
-  border-top: 3px solid #3498db;
+    transition: all 0.3s ease;
+}
+
+/* Dark Mode Button */
+
+#darkModeBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: auto;
+    padding: 10px 15px;
+    z-index: 1000;
+    background: #0d1b2a;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Dark Mode */
+
+.dark-mode {
+    background: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .container {
+    background: #1e1e1e;
+}
+
+.dark-mode .card {
+    background: #2a2a2a;
+    color: white;
+    box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode p,
+.dark-mode li {
+    color: white;
+}
+
+.dark-mode a {
+    color: #4db8ff;
+}
+
+.dark-mode input {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dark-mode footer {
+    background: #1a1a1a;
+    color: white;
+}
+
+.dark-mode hr {
+    border-color: #444;
 }
