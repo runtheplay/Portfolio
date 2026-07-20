@@ -1,5 +1,3 @@
-/* Smooth Transitions */
-
 body,
 .container,
 .card,
@@ -11,8 +9,6 @@ a,
 footer {
     transition: all 0.3s ease;
 }
-
-/* Dark Mode Button */
 
 #darkModeBtn {
     position: fixed;
@@ -31,8 +27,6 @@ footer {
 #darkModeBtn:hover {
     background: #1b314d;
 }
-
-/* Dark Mode */
 
 .dark-mode {
     background: #121212;
@@ -77,8 +71,6 @@ footer {
     border-color: #444;
 }
 
-/* Contact Form */
-
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -122,8 +114,6 @@ footer {
 .contact-form button:hover {
     background: #008c44;
 }
-
-/* Contact Information */
 
 .contact-info {
     margin-top: 20px;
