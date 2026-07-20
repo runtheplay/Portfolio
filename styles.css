@@ -1,12 +1,18 @@
+/* Smooth Transitions */
+
 body,
 .container,
 .card,
 input,
+select,
+textarea,
 button,
 a,
 footer {
     transition: all 0.3s ease;
 }
+
+/* Dark Mode Button */
 
 #darkModeBtn {
     position: fixed;
@@ -14,11 +20,19 @@ footer {
     right: 20px;
     width: auto;
     padding: 10px 15px;
-    z-index: 1000;
     background: #0d1b2a;
     color: white;
+    border: none;
     border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
 }
+
+#darkModeBtn:hover {
+    background: #1b314d;
+}
+
+/* Dark Mode */
 
 .dark-mode {
     background: #121212;
@@ -32,7 +46,7 @@ footer {
 .dark-mode .card {
     background: #2a2a2a;
     color: white;
-    box-shadow: 0 0 10px rgba(255,255,255,0.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
 }
 
 .dark-mode h1,
@@ -46,7 +60,9 @@ footer {
     color: #4db8ff;
 }
 
-.dark-mode input {
+.dark-mode input,
+.dark-mode select,
+.dark-mode textarea {
     background: #333;
     color: white;
     border: 1px solid #555;
@@ -61,34 +77,58 @@ footer {
     border-color: #444;
 }
 
-.contact-form{
-    display:flex;
-    flex-direction:column;
-    gap:15px;
+/* Contact Form */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
 }
 
 .contact-form input,
 .contact-form select,
-.contact-form textarea{
-    width:100%;
-    padding:12px;
-    border:1px solid #ccc;
-    border-radius:8px;
-    font-family:'Poppins',sans-serif;
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: inherit;
 }
 
-.contact-form textarea{
-    resize:vertical;
+.contact-form textarea {
+    resize: vertical;
 }
 
-.contact-form button{
-    width:100%;
-    padding:12px;
-    border:none;
-    border-radius:8px;
-    cursor:pointer;
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #00a651;
+    box-shadow: 0 0 5px rgba(0, 166, 81, 0.3);
 }
 
-.contact-info{
-    margin-top:20px;
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background: #00a651;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #008c44;
+}
+
+/* Contact Information */
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 8px 0;
 }
